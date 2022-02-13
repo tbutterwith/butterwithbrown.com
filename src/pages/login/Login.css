@@ -1,0 +1,31 @@
+.Login {
+  text-align: center;
+  overflow: visible;
+}
+
+.incorrect-password {
+  padding-top: 1em;
+  color: red;
+  font-weight: bold;
+}
+
+
+input[type=password] {
+  width: 30em;
+  padding: 0.75em 1em;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid rgb(228, 228, 228);
+}
+
+button {
+  border-radius: 4px;
+  outline: none;
+  padding: 4px 16px;
+  background-color: white;
+  border: 1px solid transparent;
+  border-color: rgb(228, 228, 228);
+
+  cursor: pointer;
+}

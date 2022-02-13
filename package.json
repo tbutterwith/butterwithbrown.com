@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@netlify/functions": "^0.11.0",
+    "@reonomy/react-confetti-explosion": "^1.0.32",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -10,6 +12,12 @@
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
+    "aws-sdk": "^2.1073.0",
+    "cookie": "^0.4.2",
+    "date-fns": "^2.28.0",
+    "http-proxy-middleware": "^2.0.3",
+    "jwt-simple": "^0.5.6",
+    "netlify-lambda": "^2.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -18,9 +26,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "startServer": "netlify-lambda serve netlify/functions",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build:lambda": "netlify-lambda build netlify/functions",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jwt-simple": "^0.5.33"
   }
 }
