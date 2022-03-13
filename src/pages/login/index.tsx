@@ -45,7 +45,7 @@ const Login = ({onSuccessfulLogin}: Props) => {
     }
     const res = await fetch('/.netlify/functions/auth', params);
     
-    if (res.status != 200) {
+    if (res.status !== 200) {
       throw new Error("Failed Auth")
     }
   }

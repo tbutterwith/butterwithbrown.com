@@ -13,7 +13,7 @@ function App() {
     if(!weddingData) {
       fetchWeddingData();
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, weddingData]);
 
   const fetchWeddingData = async () => {
     const res = await fetch('/.netlify/functions/wedding_data',{
