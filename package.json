@@ -27,7 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "startServer": "netlify-lambda serve netlify/functions",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn build:lambda",
     "build:lambda": "netlify-lambda build netlify/functions",
     "test": "react-scripts test"
   },
