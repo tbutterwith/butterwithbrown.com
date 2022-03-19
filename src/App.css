@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
 
-  font-family: 'Didot', Didot , serif;
+  font-family: 'Didot', Didot, serif;
   font-size: 16px;
 }
 
@@ -14,8 +14,33 @@ html {
   background-color: #e1fced;
 }
 
-
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
   color: #000000;
   text-decoration: none;
+}
+
+#hr {
+  border: 0;
+  border-top: 1px solid #8c8b8b;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 80%;
+}
+
+.inline-link {
+  text-decoration: underline;
+}
+
+.PageWrapper {
+  text-align: center;
+
+  margin-bottom: 2em;
+
+  max-width: 800px;
+}
+
+.PageWrapper > * {
+  padding: 1em 1em;
 }
