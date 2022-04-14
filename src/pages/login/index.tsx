@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ConfettiExplosion from '@reonomy/react-confetti-explosion';
 
@@ -16,7 +16,6 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [isExploding, setIsExploding] = useState(false);
   const [passwordIncorrect, setPasswordIncorrect] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
