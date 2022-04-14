@@ -1,0 +1,19 @@
+.Header_Links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.Header_Links a {
+  padding: 0.5em 1em;
+}
+
+.WithDate {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#Subheading {
+  margin-top: 0;
+  padding-bottom: 0;
+}

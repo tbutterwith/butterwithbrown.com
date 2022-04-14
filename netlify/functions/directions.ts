@@ -34,7 +34,7 @@ const handler: Handler = async (event, context) => {
 
   try {
     const { Item } = await docClient
-      .get({ TableName: table, Key: { guest_type: guestPermissions } })
+      .get({ TableName: table, Key: { guest_type: 'directions' } })
       .promise();
 
     if (!Item) {

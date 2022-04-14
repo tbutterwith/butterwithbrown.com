@@ -1,10 +1,10 @@
 import { decode, encode } from 'jwt-simple';
-import addDays from 'date-fns/addDays'
+import addDays from 'date-fns/addDays';
 import { GuestType } from '../src/types/data';
 
 type jwtBody = {
-  type: string,
-  exp: number,
+  type: string;
+  exp: number;
 };
 
 const checkAndGetPermissions = (authToken: string): string => {
@@ -12,11 +12,12 @@ const checkAndGetPermissions = (authToken: string): string => {
   try {
     const body: jwtBody = decode(authToken, secret);
     return body.type;
-  } catch (err) { // Squash errors and return blank
+  } catch (err) {
+    // Squash errors and return blank
     console.log(err);
     return '';
   }
-}
+};
 
 const generateToken = (permissions: GuestType): string => {
   const secret = process.env.JWT_SECRET;
@@ -28,6 +29,6 @@ const generateToken = (permissions: GuestType): string => {
   const body: jwtBody = { type: permissions, exp: expiryTimeSeconds };
 
   return encode(body, secret);
-}
+};
 
 export { checkAndGetPermissions, generateToken };
