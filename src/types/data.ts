@@ -10,6 +10,7 @@ export type GuestInfo = {
 export type GettingThere = { title: string; text: string };
 
 export type Directions = {
+  readonly date: string;
   readonly address: ReadonlyArray<string>;
   readonly access: string;
   readonly intro: string;

@@ -78,10 +78,18 @@ const GuestInfoPage = () => {
       <div className="GuestInfoPage_Schedule">
         {renderSchedule(weddingData.itinerary)}
       </div>
-      <img
-        src="901b741b-94cd-4681-b3e6-f9bb388324a1.jpg"
-        alt="Ellie and Tom on Worthing promenade"
-      />
+      <div className="portrait-img-holder">
+        <img
+          src="1f84608e-10b9-4cf9-86fc-11d3cb551b0b.jpg"
+          alt="Ellie and Tom eating ice cream"
+          className="portrait"
+        />
+        <img
+          src="75356c63-23f4-4b7a-84de-ce76b7ff66f0.jpg"
+          alt="Ellie and Tom eating ice cream"
+          className="portrait"
+        />
+      </div>
       <div className="GuestInfoPage_Address">
         <h2>Address</h2>
         <p>{renderAddress(weddingData.address)}</p>
@@ -93,8 +101,8 @@ const GuestInfoPage = () => {
         </p>
       </div>
       <img
-        src="1f84608e-10b9-4cf9-86fc-11d3cb551b0b.jpg"
-        alt="Ellie and Tom eating ice cream"
+        src="df4e233b-622b-4a27-9aee-136b8dd0dd4c.jpg"
+        alt="Ellie and Tom on Worthing promenade"
       />
     </div>
   );

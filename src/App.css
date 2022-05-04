@@ -44,3 +44,20 @@ a:visited {
 .PageWrapper > * {
   padding: 1em 1em;
 }
+
+img {
+  max-width: 800px;
+}
+
+.portrait-img-holder {
+  max-width: 100%;
+}
+
+.portrait-img-holder img {
+  max-width: calc(50% - 0.5em);
+  display: inline;
+}
+
+.portrait-img-holder img:first-child {
+  margin-right: 1em;
+}
