@@ -53,12 +53,20 @@ const DirectionsPage = () => {
 
   return (
     <div className="PageWrapper">
-      <Header />
+      <Header subHeading={directions.date} />
       <div dangerouslySetInnerHTML={{ __html: directions.intro }}></div>
-      <img
-        src="8c05805e-da7f-4cfc-a37f-fc32947d52c4.jpg"
-        alt="Ellie and Tom on the beach"
-      />
+      <div className="portrait-img-holder">
+        <img
+          src="ffad669e-847a-4bbc-a96c-e87485c49915.jpeg"
+          alt="Ellie and Tom eating ice cream"
+          className="portrait"
+        />
+        <img
+          src="c83cd25a-16bf-4144-ad88-51adabe08958.jpg"
+          alt="Ellie and Tom eating ice cream"
+          className="portrait"
+        />
+      </div>
       <div className="Directions_address">
         <h3>Address</h3>
         <p>{renderAddress(directions.address)}</p>
@@ -69,7 +77,7 @@ const DirectionsPage = () => {
         <h3>Getting There</h3>
         {renderGettingThere(directions.gettingThere)}
         <img
-          src="1f84608e-10b9-4cf9-86fc-11d3cb551b0b.jpg"
+          src="04f71290-7327-453d-b48d-321448d8839c.jpg"
           alt="Ellie and Tom eating ice cream"
         />
       </div>

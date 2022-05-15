@@ -12,18 +12,26 @@ const Header = ({ subHeading }: Props) => {
 
   return (
     <>
-      <h1 className={className}>
-        <Link to="/">Tom and Ellie</Link>
-      </h1>
-      {subHeading ? <h3 id="Subheading">🍃 {subHeading} 🍃</h3> : ''}
-      <div className="Header_Links">
-        <a href="/">RSVP</a>
-        <Link to="/">Guest Info</Link>
-        <Link to="/directions">Directions</Link>
-        <a href="/" style={{ whiteSpace: 'nowrap' }}>
-          Wedding List
-        </a>
+      <div className="Header_Container">
+        <div id="leaf01" />
+        <div className="Header_Items">
+          <h1 className={className}>
+            <Link to="/">Ellie and Tom</Link>
+          </h1>
+          {subHeading ? <h3 id="Subheading">{subHeading}</h3> : ''}
+          <div id="leaf03" />
+          <div className="Header_Links">
+            <Link to="/rsvp">RSVP</Link>
+            <Link to="/">Guest Info</Link>
+            <Link to="/directions">Directions</Link>
+            <Link to="/gift-list" style={{ whiteSpace: 'nowrap' }}>
+              Wedding List
+            </Link>
+          </div>
+        </div>
+        <div id="leaf02" />
       </div>
+      <hr id="hr" />
     </>
   );
 };

@@ -17,3 +17,39 @@
   margin-top: 0;
   padding-bottom: 0;
 }
+
+.Header_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  #leaf03 {
+    width: 100%;
+    height: 70px;
+    background-image: url(leaf03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #leaf01 {
+    width: 60px;
+    height: 119px;
+    margin-left: 30px;
+    background-image: url(leaf01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #leaf02 {
+    width: 90px;
+    height: 132px;
+    background-image: url(leaf02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
