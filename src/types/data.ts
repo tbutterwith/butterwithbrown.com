@@ -5,6 +5,7 @@ export type GuestInfo = {
   readonly rsvpUrl: string;
   readonly weddingListUrl: string;
   readonly date: string;
+  readonly deliveryAddress: ReadonlyArray<string>;
 };
 
 export type GettingThere = { title: string; text: string };
