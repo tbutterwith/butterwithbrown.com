@@ -49,30 +49,36 @@ const GiftList = () => {
       <div className="info">
         <h3>Thank you so much for being part of our day!</h3>
         <p>
-          Just being there to celebrate with us is a gift in itself so don't
-          feel like you need to buy us anything.
+          Just being there to celebrate with us is a gift in itself so please
+          don't feel like you need to buy us anything.
         </p>
         <p>
-          If you would like to get us a gift we have a gift list with{' '}
-          <a href={weddingData.weddingListUrl}>John Lewis, available here</a>.
-          You can either bring it with you on the day, or if you're travelling
-          feel free to get it delivered to our flat. Our address is{' '}
-          {renderDeliveryAddress(weddingData.deliveryAddress)}.
+          But if you would like to get us a gift we have a gift list with{' '}
+          <a href={weddingData.weddingListUrl} target="_blank">
+            John Lewis, available here
+          </a>
+          . There will be somewhere to place gifts on the day or if you're
+          travelling from afar, feel free to get it delivered to our home. Our
+          address is {renderDeliveryAddress(weddingData.deliveryAddress)}.
         </p>
-        <img
-          style={{ maxWidth: '50%' }}
-          src="/weather_clock.png"
-          alt="Bramwell Brown Weather Clock"
-        />
         <p>
-          We're also saving for a Bramwell Brown Weather Clock so if you'd like
-          you can contribute to that. We'll have a little postbox for cards at
-          the venue on the day.
+          Alternatively, we're saving for a{' '}
+          <a
+            href="https://www.bramwellbrown.com/collections/weather-clocks/products/weather-clock-small?variant=4002828357"
+            target="_blank"
+          >
+            Bramwell Brown Weather Clock
+          </a>{' '}
+          to mark the occasion and try to help us make sense of the Scottish
+          weather. If you'd like to contribute to that, we'll have a little
+          postbox for cards at the venue on the day.
         </p>
+        <p>Thank you again for joining us on our special day :)</p>
       </div>
       <img
-        src="d94c4db1-b025-4717-b319-25b4917cc469.jpg"
-        alt="Ellie and Tom on the beach"
+        src="f65af9d8-7c8f-4aa6-b6b8-06d437926d8a.jpg"
+        alt="Ellie and Tom eating ice cream"
+        className="portrait"
       />
     </div>
   );
