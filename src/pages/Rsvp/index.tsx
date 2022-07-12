@@ -38,7 +38,7 @@ const RSVP = () => {
       <div className="info">
         <p>
           Hello and thank you for RSVP-ing to our wedding! Please fill out{' '}
-          <a href={weddingData.rsvpUrl}>our RSVP form</a> by 30th June 2022.
+          <a href={weddingData.rsvpUrl}>our RSVP form</a> by 20th July 2022.
         </p>
         <h3>
           <a href={weddingData.rsvpUrl}>RSVP HERE!</a>
